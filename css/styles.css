@@ -278,7 +278,8 @@ h3 {
     margin: 0 auto;
 }
 
-
+.btn-subscribe:hover,
+.btn-subscribe:focus,
 .btn_main_page:hover,
 .btn_main_page:focus {
     background-color: #404BBF;
@@ -605,11 +606,48 @@ h3 {
     background-color: #31d0aa;
 }
 
+/*******************SUBSCRIBE*********************/
+.btn-subscribe {
+    font-family: "Roboto", sans-serif;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    border: none;
+    background-color: var(--header_studio-color-4d5ae5);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+
+}
+
+.social-media-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-color-main_page-ffffff);
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-left: auto;
+}
 
 
+.a {
+    display: flex;
+}
 
-
-/*************WEBSTUDIO*********************/
+/*******************WEBSTUDIO*********************/
 .footer_studio {
     background-color: var(--span_studio-color-2e2f42);
     padding-top: 100px;
@@ -666,7 +704,7 @@ h3 {
 
 }
 
-/**************modal********************/
+/******************modal********************/
 .container-modal {
     position: fixed;
     top: 0;
