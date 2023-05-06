@@ -744,22 +744,6 @@ h3 {
     fill: #FFFFFF;
 }
 
-/*modal-h*/
-.modal-h {
-    position: sticky;
-    font-weight: 500px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 360px;
-    height: 24px;
-    left: 540px;
-    top: 152px;
-}
-
 label {
     display: flex;
     flex-direction: column;
