@@ -744,6 +744,7 @@ h3 {
     fill: #FFFFFF;
 }
 
+/***************** modal-label *************************/
 label {
     display: flex;
     flex-direction: column;
