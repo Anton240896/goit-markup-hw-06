@@ -63,9 +63,16 @@ nav {
 
 p,
 h1,
-h2,
-h3 {
+h2 {
+    color: #434455;
     margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--span_studio-color-2e2f42);
 }
 
 /*********** HEADER ***********/
@@ -415,7 +422,6 @@ h3 {
 
 /*h3*/
 .hero_main_page-dreamteam {
-    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
@@ -514,8 +520,6 @@ h3 {
 /*li*/
 .first-list-costumers {
     width: calc((100% - 120px) / 6);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 88px;
     list-style: none;
 }
@@ -719,7 +723,8 @@ h3 {
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -732,7 +737,6 @@ h3 {
 }
 
 .close-btn-icons {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
 }
 
@@ -907,10 +911,7 @@ label {
 
 /*h2*/
 .h_portfolio {
-    font-weight: 500;
-    color: var(--span_studio-color-2e2f42);
     font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     margin-top: 0;
