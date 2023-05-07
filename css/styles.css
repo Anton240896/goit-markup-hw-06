@@ -64,16 +64,11 @@ nav {
 p,
 h1,
 h2 {
-    color: #434455;
     margin-top: 0;
 }
 
-h3 {
-    margin: 0;
-    line-height: 1.2;
-    font-weight: 500;
-    color: var(--span_studio-color-2e2f42);
-}
+    {}
+
 
 /*********** HEADER ***********/
 /*header main-page*/
@@ -643,10 +638,6 @@ h3 {
 }
 
 
-.a {
-    display: flex;
-}
-
 /*******************WEBSTUDIO*********************/
 .footer_studio {
     background-color: var(--span_studio-color-2e2f42);
@@ -791,6 +782,67 @@ label {
     display: flex;
     flex-direction: column;
 }
+
+
+/***********p*************/
+.text-modal {
+    margin: 0;
+    padding-top: 72px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+
+
+.form-modal {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+/*******div***********/
+.div-form {
+
+    margin-bottom: 24px;
+}
+
+.div-form input {
+    width: 100%;
+    padding: 4px;
+    ;
+}
+
+.div-form label {
+    margin-bottom: 5px;
+}
+
+
+
+/*********comment*********/
+.div-form-comment input {
+    width: 100%;
+    height: 120px;
+}
+
+.div-form-comment input::placeholder {
+    position: absolute;
+    font-family: 'Roboto';
+    padding-top: 8px;
+    padding-left: 16px;
+    color: rgba(46, 47, 66, 0.4);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+}
+
+
 
 /*2 page*/
 
@@ -949,6 +1001,7 @@ label {
 
 /*h2*/
 .h_portfolio {
+    color: #2e2f42;
     font-size: 20px;
     letter-spacing: 0.02em;
     margin-bottom: 8px;

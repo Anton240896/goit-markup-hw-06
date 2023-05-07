@@ -443,33 +443,39 @@
       <button class="close-btn" type="button" data-modal-close><svg class="close-btn-icons" width="8" height="8">
           <use href="./images/button_close.svg#icon-close"></use>
         </svg></button>
-      <h3>Leave your contacts and we will call you back</h3>
 
-      <form>
-        <!--name-modal-person-->
-        <label>
-          Name
-          <input type="text" name="name">
+      <!----------modal-text----------->
+      <h3 class="text-modal">Leave your contacts and we will call you back</h3>
 
-        </label>
+      <form class="form-modal">
+        <!--------name-modal-person--------->
+        <div class="div-form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
 
         <!----------phone-modal-------------->
-        <label>
-          Phone
-          <input type="text" name="phone">
-        </label>
+        <div class="div-form">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="tel">
+        </div>
+
 
         <!---------email-modal-------->
-        <label>
-          Email
-          <input type="text" name="email">
-        </label>
+        <div class="div-form">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="mail">
+        </div>
 
         <!--------comment-modal--------->
-        <label>
-          Comment
-          <input type="text" name="comment" placeholder="Text input">
-        </label>
+        <div class="div-form-comment">
+          <label for="name">Comment</label>
+          <input type="text" name="comment" id="comment" placeholder="Text input">
+        </div>
+
+        <!--------button-modal--------->
+        <button type="submit">Send</button>
+
       </form>
     </div>
   </div>
