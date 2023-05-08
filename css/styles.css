@@ -819,13 +819,16 @@ label:hover {}
 .div-form input {
     width: 100%;
     height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 4px;
     border-radius: 4px;
     margin-bottom: 5px;
 }
 
-
-.div-form input:hover {
+.div-form-comment textarea:hover,
+.div-form-comment textarea:focus,
+.div-form input:hover,
+.div-form input:focus {
     border-color: var(--header_studio-color-4d5ae5);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -841,13 +844,6 @@ label:hover {}
     height: 120px;
     border-radius: 4px;
     resize: none;
-}
-
-.div-form-comment textarea:hover,
-.div-form-comment textarea:focus {
-    border-color: #4D5AE5;
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .div-form-comment textarea::placeholder {
