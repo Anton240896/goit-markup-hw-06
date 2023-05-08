@@ -843,6 +843,9 @@ label:hover {}
 
 .checkbox-modal {
     font-family: 'Roboto';
+    display: flex;
+    margin-top: 16px;
+    align-items: flex-start;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -853,10 +856,13 @@ label:hover {}
 }
 
 .accept-link {
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
-.accept-text {}
+.accept-text {
+    margin-left: 8px;
+    margin-top: 0;
+}
 
 .btn_main_page-modal {
     font-family: "Roboto", sans-serif;
