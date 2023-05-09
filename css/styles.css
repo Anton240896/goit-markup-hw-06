@@ -551,6 +551,9 @@ h2 {
 
 
 /************* FOOTER *************/
+footer {
+    position: relative;
+}
 
 /******************* SOCIAL ***********************/
 /*p social-media*/
@@ -603,7 +606,7 @@ h2 {
 /*******************SUBSCRIBE*********************/
 
 /*************** p ******************/
-.social-media-subscribe {
+.text-subscribe {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -616,6 +619,7 @@ h2 {
 
 /************div****************/
 .container-subscribe input {
+    position: absolute;
     display: flex;
     justify-content: center;
     width: 264px;
@@ -644,18 +648,17 @@ h2 {
 }
 
 .button-subscribe {
-    display: flex;
     width: 165px;
     height: 40px;
     justify-content: center;
     align-items: center;
-    padding-left: 24px;
+    padding-right: 64px;
     padding-top: 8px;
     gap: 16px;
     background: #4D5AE5;
     border-radius: 4px;
     color: #FFFFFF;
-    margin-left: 24px;
+    margin-left: 370px;
     border: none;
 
 }
@@ -805,8 +808,8 @@ label {
     display: flex;
     flex-direction: column;
     color: #8e8f99;
-
 }
+
 
 /**************** icons ********************/
 .icons-modal {
@@ -841,6 +844,7 @@ label:hover {}
 
 /*******div***********/
 .div-form {
+    position: relative;
     margin-bottom: 24px;
 }
 
