@@ -634,6 +634,7 @@ footer {
     border-radius: 4px;
 }
 
+/************** email-subscribe *****************/
 .container-subscribe input::placeholder {
     position: absolute;
     font-family: 'Roboto';
@@ -646,14 +647,16 @@ footer {
     letter-spacing: 0.04em;
     align-items: center;
     color: #FFFFFF;
+}
 
+.container-subscribe input {
+    color: #FFFFFF;
 }
 
 .button-subscribe {
     width: 165px;
     height: 40px;
-    justify-content: center;
-    align-items: center;
+
     padding-right: 64px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -661,12 +664,17 @@ footer {
     background: #4D5AE5;
     border-radius: 4px;
     color: #FFFFFF;
-    margin-left: 370px;
     border: none;
+    margin-left: 365px;
 }
 
 
-.icon-subscribe {}
+.icon-subscribe {
+    position: absolute;
+    margin-left: 16px;
+
+
+}
 
 /*******************WEBSTUDIO*********************/
 .footer_studio {
@@ -924,8 +932,19 @@ input {
     color: #8E8F99;
 }
 
+/************** icon-checkbox *****************/
 .checkbox {
     display: none;
+}
+
+.icon-checkbox {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
 }
 
 /************** checkbox-text *************/
