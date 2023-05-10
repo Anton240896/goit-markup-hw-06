@@ -426,12 +426,16 @@
           <p class="text-subscribe">Subscribe</p>
           <div class="container-subscribe">
             <label for="email"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail">
+            <input type="text" name="mail" id="mail" placeholder="E-mail">
 
           </div>
-          <button class="button-subscribe">Subscribe<svg>
-              <use href="./images/SVG/work06/send.svg#icon-send"></use>
-            </svg></button>
+          <button class="button-subscribe">Subscribe
+            <span class="icon-subscribe">
+              <svg>
+                <use href="./images/SVG/work06/send.svg#icon-send"></use>
+              </svg>
+            </span>
+          </button>
         </label>
       </form>
 
@@ -494,14 +498,16 @@
 
         <!--------checkbox-modal--------->
         <div class="checkbox-modal">
-          <label for="checkbox"></label>
-          <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox-label"></label>
+          <input class="checkbox" type="checkbox" name="checkbox-modal" value="checkbox">
+
           <p class="accept-text">I accept the terms and conditions of the<a class="accept-link" href="#">Privacy
               Policy</p></a>
         </div>
 
         <!--------button-modal--------->
-        <button class="btn_main_page-modal" type="submit">Send</button>
+        <button type="submit" class="btn_main_page-modal">Send</button>
+
 
       </form>
     </div>

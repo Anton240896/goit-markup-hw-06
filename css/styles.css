@@ -200,6 +200,7 @@ h2 {
 
 /*mail*/
 .link-contacts {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--mail-color-434455);
     font-size: 16px;
     line-height: 1.5;
@@ -258,13 +259,14 @@ h2 {
     height: 56px;
     border: none;
     background-color: var(--header_studio-color-4d5ae5);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     color: #FFFFFF;
     margin: 0 auto;
 }
@@ -589,6 +591,7 @@ footer {
 .link-social-footer {
     width: 100%;
     height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--header_studio-color-4d5ae5);
     border-radius: 50%;
     display: flex;
@@ -660,9 +663,10 @@ footer {
     color: #FFFFFF;
     margin-left: 370px;
     border: none;
-
 }
 
+
+.icon-subscribe {}
 
 /*******************WEBSTUDIO*********************/
 .footer_studio {
@@ -777,14 +781,15 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
 .close-btn:hover,
 .close-btn:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
     background-color: #404BBF;
     border: none;
@@ -795,13 +800,13 @@ footer {
     fill: currentColor;
 }
 
-.close-btn-icons:hover {
-    fill: #FFFFFF;
-}
-
+.close-btn-icons:hover,
 .close-btn-icons:focus {
     fill: #FFFFFF;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
 
 /***************** modal-label *************************/
 
@@ -851,7 +856,6 @@ input {
 .label-form {
     position: relative;
     margin-bottom: 24px;
-    padding-left: 38px;
 
 }
 
@@ -867,6 +871,7 @@ input {
     outline: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 4px;
+    padding-left: 38px;
     border-radius: 4px;
     margin-bottom: 5px;
 }
@@ -917,7 +922,10 @@ input {
     line-height: 14px;
     letter-spacing: 0.04em;
     color: #8E8F99;
+}
 
+.checkbox {
+    display: none;
 }
 
 /************** checkbox-text *************/
@@ -939,17 +947,21 @@ input {
     background-color: var(--header_studio-color-4d5ae5);
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-left: 100px;
+    margin-left: 80px;
     margin-right: 24px;
     border-radius: 4px;
-    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     color: #FFFFFF;
 
+}
+
+.btn_main_page-modal:hover,
+.btn_main_page-modal:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #404BBF;
 }
 
 
