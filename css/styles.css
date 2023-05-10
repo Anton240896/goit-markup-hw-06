@@ -666,6 +666,7 @@ footer {
     color: #FFFFFF;
     border: none;
     margin-left: 365px;
+    cursor: pointer;
 }
 
 
@@ -938,13 +939,17 @@ input {
 }
 
 .icon-checkbox {
+    width: 16px;
+    height: 14px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    fill: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    cursor: pointer;
 
+}
+
+.checkbox:checked+.icon-checkbox {
+    background-color: color red;
+    background-image: url(./symbol-defs.svg);
 }
 
 /************** checkbox-text *************/
@@ -966,7 +971,7 @@ input {
     background-color: var(--header_studio-color-4d5ae5);
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-right: 24px;
     border-radius: 4px;
     font-weight: 500;
@@ -974,6 +979,7 @@ input {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    cursor: pointer;
 
 }
 
