@@ -759,7 +759,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
-    min-height: 576px;
+    height: 584px;
+    padding: 72px 24px 24px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -823,27 +824,28 @@ footer {
 label {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
     color: #8e8f99;
 }
-
-input {
-    padding-left: 38px;
-}
-
 
 
 /**************** icons ********************/
 .icons-modal {
     position: absolute;
-    top: 42%;
+    top: 50%;
     left: 16px;
+    fill: var(--span_studio-color-2e2f42);
 }
 
 
 /***********p*************/
 .text-modal {
-    margin: 0;
-    padding-top: 72px;
+    margin-bottom: 16px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -854,24 +856,26 @@ input {
 
 
 /********************* form **********************/
-.form-modal {
-    padding-top: 34px;
-    padding-left: 24px;
-    padding-right: 24px;
 
+/******* label ***********/
+.label-form-modal {
+    position: relative;
+    margin-bottom: 8px;
 }
 
-/******* span ***********/
-.label-form {
-    position: relative;
-    margin-bottom: 24px;
+/*************** input ******************/
 
+/************** span *****************/
+.label-form {
+    margin-top: 4px;
 }
 
 /**************** icon changes to another color ***********************/
+.label-form:hover .icons-modal:hover,
 .label-form:focus-within .icons-modal {
     fill: var(--header_studio-color-4d5ae5);
 }
+
 
 /**********border*************/
 .label-form input {
@@ -882,13 +886,13 @@ input {
     padding: 4px;
     padding-left: 38px;
     border-radius: 4px;
-    margin-bottom: 5px;
 }
 
 .label-form input:hover,
 .label-form input:focus,
 .div-form-comment textarea:hover,
 .div-form-comment textarea:focus {
+
     border-color: var(--header_studio-color-4d5ae5);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -923,9 +927,6 @@ input {
 
 
 /************** checkbox *****************/
-.modal-checkbox-input {
-    display: none;
-}
 
 /*********** div ***************/
 .checkbox-modal {
@@ -973,6 +974,7 @@ input {
 
 .text-checkbox-link {
     margin-left: 2px;
+    color: var(--header_studio-color-4d5ae5);
 }
 
 
@@ -985,9 +987,8 @@ input {
     border: none;
     background-color: var(--header_studio-color-4d5ae5);
     margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: 90px;
-    margin-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
