@@ -948,9 +948,11 @@ input {
 }
 
 .checkbox:checked+.icon-checkbox {
-    background-color: #404bbf;
-    background-image: url(/images/SVG/work06/Vector.svg);
-    fill: url(/images/SVG/work06/Vector.svg);
+    border-color: var(--section-four-404bbf);
+    background-color: var(--section-four-404bbf);
+    background-image: url(../images/SVG/work06/Vector.svg);
+    background-size: contain;
+    background-origin: content-box;
 }
 
 /************** checkbox-text *************/
