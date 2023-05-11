@@ -951,7 +951,7 @@ input {
 .checkbox:checked+.icon-checkbox {
     border-color: var(--section-four-404bbf);
     background-color: var(--section-four-404bbf);
-    background-image: url(../images/SVG/close.svg);
+    background-image: url(../images/SVG/work06/Vector.svg);
     background-size: contain;
     background-origin: content-box;
 }
