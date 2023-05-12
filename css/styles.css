@@ -948,6 +948,8 @@ input:hover+.icons-modal-svg {
     width: 100%;
     height: 120px;
     outline: none;
+    border-color: rgba(46, 47, 66, 0.4);
+    ;
     border-radius: 4px;
     resize: none;
 }
