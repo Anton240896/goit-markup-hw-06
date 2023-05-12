@@ -69,7 +69,6 @@ h2 {
 
 
 
-
 /*********** HEADER ***********/
 /*header main-page*/
 .header-main-page {
@@ -271,13 +270,6 @@ h2 {
     margin: 0 auto;
 }
 
-.button-subscribe:hover,
-.button-subscribe:focus,
-.btn_main_page:hover,
-.btn_main_page:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #404BBF;
-}
 
 
 /***************** SECTION 2 ******************/
@@ -607,6 +599,13 @@ footer {
 
 /*******************SUBSCRIBE*********************/
 
+/************** form *******************/
+
+.form-subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
 /*************** p ******************/
 .text-subscribe {
     font-weight: 500;
@@ -616,10 +615,9 @@ footer {
     color: var(--background-color-main_page-ffffff);
     margin-top: 0;
     margin-bottom: 16px;
-    margin-left: 80px;
 }
 
-/************div****************/
+/************ div-input ****************/
 .container-subscribe input {
     position: absolute;
     display: flex;
@@ -660,13 +658,20 @@ footer {
     padding-right: 64px;
     padding-top: 8px;
     padding-bottom: 8px;
-    gap: 16px;
     background: #4D5AE5;
     border-radius: 4px;
     color: #FFFFFF;
     border: none;
-    margin-left: 365px;
     cursor: pointer;
+}
+
+
+.button-subscribe:hover,
+.button-subscribe:focus,
+.btn_main_page:hover,
+.btn_main_page:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #404BBF;
 }
 
 
@@ -842,6 +847,13 @@ label {
     fill: var(--span_studio-color-2e2f42);
 }
 
+.icons-modal-svg {
+    position: absolute;
+    top: 45%;
+    left: 16px;
+    fill: var(--span_studio-color-2e2f42);
+}
+
 
 /***********p*************/
 .text-modal {
@@ -872,7 +884,9 @@ label {
 
 /**************** icon changes to another color ***********************/
 .label-form:hover .icons-modal:hover,
-.label-form:focus-within .icons-modal {
+.label-form:hover .icons-modal-svg:hover,
+.label-form:focus-within .icons-modal,
+.label-form:focus-within .icons-modal-svg {
     fill: var(--header_studio-color-4d5ae5);
 }
 
@@ -888,11 +902,13 @@ label {
     border-radius: 4px;
 }
 
+.icons-modal:hover {}
+
+
 .label-form input:hover,
 .label-form input:focus,
 .div-form-comment textarea:hover,
 .div-form-comment textarea:focus {
-
     border-color: var(--header_studio-color-4d5ae5);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -923,6 +939,11 @@ label {
     line-height: 14px;
     letter-spacing: 0.04em;
 }
+
+textarea {
+    margin-top: 4px;
+}
+
 
 
 
@@ -1025,7 +1046,7 @@ label {
     padding-bottom: 120px;
 }
 
-.visualy-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
