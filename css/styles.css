@@ -844,6 +844,10 @@ label {
     color: #8e8f99;
 }
 
+.form-modal {
+    margin-top: 32px;
+}
+
 
 
 input:hover+.icons-modal,
@@ -875,7 +879,7 @@ input:hover+.icons-modal-svg {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 32px (16px*2);
+    line-height: 1.5px;
     text-align: center;
     letter-spacing: 0.02em;
 }
