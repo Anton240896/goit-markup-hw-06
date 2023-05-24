@@ -553,7 +553,7 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--background-color-main_page-ffffff);
+    color: var(--color-white);
     margin-top: 0;
     margin-bottom: 16px;
 }
